@@ -5,7 +5,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {UserComponent} from './user/user.component';
 
 const routes: Routes = [
-  { path: '/dist', redirectTo: '/user', pathMatch: 'full' },
+  { path: '/', redirectTo: '/user', pathMatch: 'full' },
   { path: 'user', component: UserComponent},
   { path: 'about', component: AboutComponent },
   { path: 'contacts', component: ContactsComponent }
