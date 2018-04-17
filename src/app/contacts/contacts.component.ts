@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HeaderComponent} from '../header/header.component';
 
 @Component({
   selector: 'app-contacts',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.css']
 })
 export class ContactsComponent implements OnInit {
-
-  constructor() { }
+  redirect = 'contacts';
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -1,8 +1,10 @@
 <div>
-    <ul id="menu">
-      <li><a id="contacts" routerLink="/contacts">Contacts</a></li>
-      <li><a id="about" routerLink="/about">About Contest</a></li>
-      <li><a id = "auth" routerLink="/user">Sign in/Sign up</a></li>
+    <ul id="menu" >
+      <li *ngFor="let item of items">
+          <!--[class.selected]="item === selectedItem"
+        (click)="onSelect(item)">-->
+        <a id="{{item}}" routerLink="/{{item}}">{{item}}</a>
+      </li>
     </ul>
 </div>
 
