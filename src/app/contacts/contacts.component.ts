@@ -7,7 +7,8 @@ import {HeaderComponent} from '../header/header.component';
   styleUrls: ['./contacts.component.css']
 })
 export class ContactsComponent implements OnInit {
-  redirect = 'contacts';
+  name = 'Contacts';
+  routeTo = 'contacts';
   constructor() {
   }
 

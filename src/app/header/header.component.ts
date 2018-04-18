@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { ContactsComponent} from '../contacts/contacts.component';
 import { AboutComponent } from '../about/about.component';
-import { UserComponent } from '../user/user.component';
+import { AuthComponent } from '../auth/auth.component';
+
 
 
 @Component({
@@ -11,12 +12,14 @@ import { UserComponent } from '../user/user.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  selectedItem = 'user';
-  items: string[] = ['contacts', 'about', 'user'];
-  constructor() { }
-  onSelect(item: string): void {
-    this.selectedItem = item;
+
+  selectedItem = 'about';
+
+  items: any[] = [ new ContactsComponent, new AboutComponent, new AuthComponent ];
+  onSelect (item1: string): void {
+    this.selectedItem = item1;
   }
+  constructor() { }
   ngOnInit() {
   }
 

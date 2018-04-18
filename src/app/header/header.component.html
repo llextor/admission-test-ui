@@ -1,10 +1,36 @@
+<!--
 <div>
     <ul id="menu" >
-      <li *ngFor="let item of items">
-          <!--[class.selected]="item === selectedItem"
-        (click)="onSelect(item)">-->
-        <a id="{{item}}" routerLink="/{{item}}">{{item}}</a>
-      </li>
+      <li
+        *ngIf="sessionUser==='guest'"
+        routerLink="/contacts">
+        <a id="contacts">Контакты</a></li>
+      <li
+        *ngIf="sessionUser==='guest'"
+        routerLink="/about">
+        <a id="about">О тестировании</a></li>
+      <li *ngIf="sessionUser==='guest'"
+          routerLink="/auth">
+        <a id="auth">Login</a></li>
+
     </ul>
 </div>
 
+-->
+
+<div >
+  <ul id="menu">
+    <li
+    *ngFor="let item of items"
+    (click)="onSelect(item.routeTo)"
+    [class.selected]="item.routeTo === selectedItem"
+    ><a  id="{{item.routeTo}}" routerLink="/{{item.routeTo}}">{{item.name}}</a></li>
+  </ul>
+</div>
+<!--
+ &lt;!&ndash; <li *ngFor="let item of items">
+          &lt;!&ndash;[class.selected]="item === selectedItem"
+        (click)="onSelect(item)">&ndash;&gt;
+        <a id="{{item}}" routerLink="/{{item}}">{{item}}</a>
+      </li>&ndash;&gt;
+-->

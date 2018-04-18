@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { UserComponent } from './user/user.component';
+import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeaderComponent } from './header/header.component';
 
@@ -18,7 +18,7 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     AboutComponent,
     ContactsComponent,
-    UserComponent,
+    AuthComponent,
     HeaderComponent
   ],
   imports: [
