@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ContactsComponent} from '../contacts/contacts.component';
 import { AboutComponent } from '../about/about.component';
-import { AuthComponent } from '../auth/auth.component';
+import { FormComponent } from '../form/form.component';
 
 
 
@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
 
   // selectedItem = 'about';
 
-  items: any[] = [ new ContactsComponent, new AboutComponent, new AuthComponent ];
+  items: any[] = [ new ContactsComponent, new AboutComponent, new FormComponent ];
  /* onSelect (item1: string): void {
     this.selectedItem = item1;
   }*/

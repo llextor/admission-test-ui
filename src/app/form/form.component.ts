@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {HeaderComponent} from '../header/header.component';
 
 @Component({
-  selector: 'app-user',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.css']
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.css']
 })
-export class AuthComponent  implements OnInit {
+export class FormComponent  implements OnInit {
   name = 'Sign in/up';
-  routeTo = 'auth';
+  routeTo = 'form';
   constructor() {
   }
 

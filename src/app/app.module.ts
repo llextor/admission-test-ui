@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { AuthComponent } from './auth/auth.component';
+import { FormComponent } from './form/form.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,16 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppComponent,
     AboutComponent,
     ContactsComponent,
-    AuthComponent,
+    FormComponent,
     HeaderComponent,
     RegistrationComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,12 +24,12 @@ a {
   outline: 0;
 
 }
-#auth {
+#form {
   float: right;
   margin-right: 10%;
 
 }
-#auth:hover {
+#form:hover {
   cursor: pointer;
   border-bottom: 1px solid #dc4955;
   color: #dc4955;

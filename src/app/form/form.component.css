@@ -1,4 +1,4 @@
-#auth {
+#form {
   border: 1px solid #797979;
   border-radius: 5px;
   padding: 15px;
@@ -10,8 +10,6 @@
   min-width: 300px;
   position: absolute;
   top: 35%;
-
-
 }
 p {
   padding-bottom: 10px;
@@ -28,8 +26,6 @@ input {
   border-bottom: 1px solid #797979;
   color: #fafafa;
   font-family: 'HelveticaNeueCyr', sans-serif;
-
-
   padding-left: 30px;
 }
 input[type="text"] {
