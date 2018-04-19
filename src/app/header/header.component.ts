@@ -13,12 +13,12 @@ import { AuthComponent } from '../auth/auth.component';
 })
 export class HeaderComponent implements OnInit {
 
-  selectedItem = 'about';
+  // selectedItem = 'about';
 
   items: any[] = [ new ContactsComponent, new AboutComponent, new AuthComponent ];
-  onSelect (item1: string): void {
+ /* onSelect (item1: string): void {
     this.selectedItem = item1;
-  }
+  }*/
   constructor() { }
   ngOnInit() {
   }

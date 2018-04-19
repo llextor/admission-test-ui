@@ -18,13 +18,12 @@
 
 -->
 
-<div >
+<div id="header" >
   <ul id="menu">
     <li
     *ngFor="let item of items"
-    (click)="onSelect(item.routeTo)"
-    [class.selected]="item.routeTo === selectedItem"
-    ><a  id="{{item.routeTo}}" routerLink="/{{item.routeTo}}">{{item.name}}</a></li>
+
+    ><a  id="{{item.routeTo}}" routerLink="/{{item.routeTo}}" routerLinkActive="active">{{item.name}}</a></li>
   </ul>
 </div>
 <!--

@@ -9,6 +9,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -19,7 +21,9 @@ import { HeaderComponent } from './header/header.component';
     AboutComponent,
     ContactsComponent,
     AuthComponent,
-    HeaderComponent
+    HeaderComponent,
+    RegistrationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
